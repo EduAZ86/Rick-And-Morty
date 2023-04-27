@@ -1,0 +1,49 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;
+    background: linear-gradient(270deg, #22A39F,#434242);
+    background-size: 700% 600%;
+    animation:bgGradient 5s ease infinite;
+}
+@keyframes bgGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+   height: 400px;
+   width: 400px;
+   border-radius: 50%;
+  
+}
+
+.imput{
+    height: 20px;
+    width: 200px;
+    font-family: 'Bruno Ace', cursive;
+    background-color: #F3EFE0;
+     
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.label{
+    font-family: 'Bruno Ace', cursive;
+    margin-right: 20px;
+}
+
+.button{
+    border-radius: 15%;  
+    font-family: 'Bruno Ace', cursive;
+    background-color: #F3EFE0;
+    margin-right: 156px;
+}

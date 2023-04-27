@@ -1,0 +1,98 @@
+
+
+.header{
+height: 4%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+margin: 0%;
+background: linear-gradient(90deg, #22A39F ,#CEEDC7);
+background-size: 700% 600%;
+animation:bgGradient 10s ease infinite;
+
+}
+
+@keyframes bgGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.header .nav{
+  
+  
+    width: 70%;
+}
+.unorderList{
+width: auto;    
+height: 100%;
+margin: 0%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 10%;
+list-style: none;
+color: #F3EFE0;
+text-shadow: 0px 0px 4px #434242 ;
+padding-bottom: 5px;   
+}
+
+
+
+
+.icon {
+    width: 80px;
+    height: 50px;   
+    background-image: url('../img/icon.png');
+    background-size: contain ;
+    background-repeat: no-repeat;   
+    
+    
+}
+.search{
+
+    width: 120px;
+    height: 80px;
+
+    
+}
+   
+
+.about {
+    font-family: 'Bruno Ace', cursive;
+    text-decoration :  none;
+    color: #F3EFE0;
+
+}
+.about:hover {
+    color: #E96479    
+}
+.home {
+    font-family: 'Bruno Ace', cursive;
+    text-decoration :  none;
+    color: #F3EFE0;
+}
+
+.home:hover {
+    color: #E96479    
+}
+
+.logout{
+    background-image: url('./logout.png');
+    width: 40px;
+    height: 30px;
+    z-index: 3;
+    background-size: contain ;
+    background-repeat: no-repeat;
+    filter: invert(98%) sepia(6%) saturate(980%) hue-rotate(328deg) brightness(104%) contrast(93%);
+    
+}
+
+.logout:hover {
+    filter: invert(55%) sepia(89%) saturate(1420%) hue-rotate(310deg) brightness(93%) contrast(97%); 
+}    

@@ -1,0 +1,257 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+
+
+.card{
+position: relative;
+height: 250px;
+width: 250px;
+
+
+}
+.landing{
+    border-radius: 10%;
+    position: relative;
+    height: 100%;
+    width: 100%;   
+    box-shadow: 0px 0px 20px #22A39F;  
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.button{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 100;
+    border: 0;
+    font-family: 'Bruno Ace', cursive;
+    color: #F3EFE0;
+    margin-top: 4%;
+    margin-left: 90%;
+    font-size: 45%;
+    font-weight: 800;
+    padding: 0.5% 2% 0.5% 2%;
+    cursor: pointer;
+    background-color: #434242;
+}
+.button:hover{
+    background-color: #FD8A8A;
+}
+    
+.profile{
+    display: flex;  
+    position: static;
+    z-index: 100;
+}
+.image{
+    z-index: 50;
+    width: 250px;
+    position: relative;
+    border-radius: 5%;
+    border: 0%;
+    
+       
+}
+.buttonAndName{
+   
+    z-index: 120;
+    
+   
+}
+
+.name{
+    
+    font-size: 90%;
+    color:#FD8A8A;
+    position: absolute;
+    z-index: 100;
+ 
+    margin-left: 5%;
+    font-family: 'Bruno Ace', cursive;
+    text-shadow: 0px 0px 10px #434242;
+    margin-bottom: 0%;
+    bottom: 3%;
+}    
+
+.info{
+border-radius: 5%;
+ position: absolute;   
+ height: 80%;
+ width: 95%;
+ left: 0;
+ bottom: 0;
+ top: 0;
+ margin: auto;
+ padding: 2%;
+ background: linear-gradient(transparent, #22A39F);
+ z-index: 90;
+ display: flex;
+ align-items: end;
+ justify-items: center;
+
+}
+
+.ulList{
+    font-size: 60%;
+    font-weight: 200;
+    color: #F3EFE0;
+    font-family: 'Bruno Ace', cursive;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;  
+    align-content: center;
+ 
+    margin-left: 0%;
+}
+.list{
+    margin-bottom: 2%;
+}
+
+.card:hover .info{
+    top: 90%;
+    transition: 0.7s;
+}
+.mas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;  
+ height: 15px;
+ width: 220px;   
+ margin-top: 0%;
+ padding-top: 0%;
+ margin-bottom: 2%;   
+ font-size: 12px;   
+ color:#434242;
+ text-shadow: 0px 0px 10px  #F3EFE0;   
+}
+.navLink:hover{
+    color:#FD8A8A
+}    
+
+.navLink{
+    margin-left: 0%;
+    text-decoration: none;
+    margin-left: 5px;
+    color: #434242;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Estilo anterior fallado
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+background-color:transparent;
+}
+
+
+.card{
+    height: 300px;    
+    width: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0px;
+    background: linear-gradient(45deg, rgb(127, 244, 255, 0.5), rgb(0, 255, 51, 0.5));   
+    border-radius: 1%;
+    padding: 8px;
+    filter: drop-shadow(0px 0px 20px rgb(121, 239, 255)); 
+  
+}
+.card :after{
+    content: '';
+    position: absolute;
+    height: 290px;
+    width: 240px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+}
+.card :hover {
+    transform:  translateY(-40px) scale(0.75);
+    z-index: 3;
+}
+
+.card:hover .profile{
+    position: absolute;
+    
+    border-style:hidden  ;
+    height: 240px;    
+    width: 240px;
+   transition: 400ms ease-in-out;
+
+}
+.card:hover .detail{
+    transform: escale (1);
+    z-index: 2;
+}
+
+
+
+.detail{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    transform: scale(0.1);
+    transition: 400ms;
+}
+
+.Species{
+    
+    color: white;
+    background-color: aquamarine;
+    
+}
+
+.Name{
+  
+    color: rgb(230, 54, 30);
+    font-size:15px;
+    font-family:'Lucida Sans';
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 5px rgb(28, 232, 247);
+
+     
+    
+}
+
+
+.Id{
+
+   font-size: 15px; 
+} */
+
