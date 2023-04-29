@@ -9,7 +9,11 @@ import { useEffect , useState } from "react";
 
 function Card(props) {
 
-   const { id, name, status, species, image, onClose,addFav, removeFav , myFavorites } = props
+   const { id, name, status, species, image, onClose,addFav, removeFav, myFavorites } = props
+
+ 
+
+  
 
    const [ isFav , setIsFav ] = useState(false)
 
@@ -19,13 +23,14 @@ function Card(props) {
             setIsFav(true);
          }
       });
-   }, [myFavorites,id]);
+   }, [myFavorites]);
 
-   const handleFavorite = () => {
-      if (isFav) {
+   const handleFavorite =() => {
+      if(isFav) {
          setIsFav(false)
-         removeFav(id)      
-      } else {
+         removeFav(id)
+      }
+      else {
          setIsFav(true)
          addFav(props)
       }
@@ -33,19 +38,18 @@ function Card(props) {
    
 
    return (
-   <div className={styles.card}>
+      <div className={styles.card}>
        <div className={styles.landing}>   
          <div className={styles.buttonAndName}>
-
-            {
+           
+                  {
                isFav ? (
-                  <button onClick={handleFavorite}>❤️</button>
+               <button className={styles.favorites} onClick={handleFavorite}>❤️</button>
                ) : (
-                  <button onClick={handleFavorite}>🤍</button>
+               <button className={styles.favorites} onClick={handleFavorite}>🤍</button>
                )
-            }            
- 
-
+               }
+            
             <button className={styles.button} onClick={()=> {onClose(id)}}>X</button>
             <h2 className={styles.name}>{name}</h2>        
          </div>
@@ -61,20 +65,21 @@ function Card(props) {
          </ul>
       </div>         
    </div>
-   );}
+   );
+}
 
-const mapStateToProps = (state) => {
+const mapStateToProps =(state) => {
    return {
-      myFavorites: state.myFavorites
+      myFavorites : state.myFavorites
    }
 }
 
 
 const mapDispatchToProps = (dispatch) => {
    return {
-      addFav: (character) => dispatch(addFav(character)),
-      removeFav: (id) => dispatch(removeFav(id))
+      addFav : (character) => dispatch(addFav(character)),
+      removeFav: (id)=> dispatch(removeFav(id))
    }
 }
 
-export default connect (mapStateToProps, mapDispatchToProps)(Card)
+export default connect(mapStateToProps,mapDispatchToProps)(Card)

@@ -24,21 +24,24 @@ width: 250px;
     
 }
 .button{
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     position: absolute;
     border-radius: 50%;
+    border: 0px;
+   
     z-index: 100;
-    border: 0;
     font-family: 'Bruno Ace', cursive;
     color: #F3EFE0;
-    margin-top: 4%;
+    margin-top: 2%;
     margin-left: 90%;
-    font-size: 45%;
+    font-size: 80%;
     font-weight: 800;
     padding: 0.5% 2% 0.5% 2%;
     cursor: pointer;
-    background-color: #434242;
+    background-color: #22A39F;
+    
+    
 }
 .button:hover{
     background-color: #FD8A8A;
@@ -144,114 +147,36 @@ border-radius: 5%;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-Estilo anterior fallado
-*{
-    margin: 0%;
-    padding: 0%;
-}
-
-.container{
-background-color:transparent;
-}
-
-
-.card{
-    height: 300px;    
-    width: 250px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: 0px;
-    background: linear-gradient(45deg, rgb(127, 244, 255, 0.5), rgb(0, 255, 51, 0.5));   
-    border-radius: 1%;
-    padding: 8px;
-    filter: drop-shadow(0px 0px 20px rgb(121, 239, 255)); 
-  
-}
-.card :after{
-    content: '';
+.favorites{
+    height: 30px;
+    width: 30px;
     position: absolute;
-    height: 290px;
-    width: 240px;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.8);
-    visibility: hidden;
-}
-.card :hover {
-    transform:  translateY(-40px) scale(0.75);
-    z-index: 3;
-}
-
-.card:hover .profile{
-    position: absolute;
-    
-    border-style:hidden  ;
-    height: 240px;    
-    width: 240px;
-   transition: 400ms ease-in-out;
-
-}
-.card:hover .detail{
-    transform: escale (1);
-    z-index: 2;
+    border-radius: 50%;
+    z-index: 110;
+    border: 0;
+    font-family: 'Bruno Ace', cursive;
+    color: #F3EFE0;
+    margin-top: 0%;
+    margin-right: 90%;
+    font-size: 90%;
+    font-weight: 800;
+    padding-left: 1.5%;
+    cursor: pointer;   
+    background-color: transparent;
 }
 
 
 
-.detail{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 200px;
-    transform: scale(0.1);
-    transition: 400ms;
-}
-
-.Species{
-    
-    color: white;
-    background-color: aquamarine;
-    
-}
-
-.Name{
-  
-    color: rgb(230, 54, 30);
-    font-size:15px;
-    font-family:'Lucida Sans';
-    letter-spacing: 5px;
-    text-shadow: 3px 3px 5px rgb(28, 232, 247);
-
-     
-    
-}
 
 
-.Id{
 
-   font-size: 15px; 
-} */
+
+
+
+
+
+
+
+
+
 

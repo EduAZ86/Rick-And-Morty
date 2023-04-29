@@ -7,6 +7,7 @@ import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import About from './components/About/About';
 import Form from './components/Form/Form';
 import Detail from './components/Detail/Detail';
+import Favorites from './components/Favorites/Favorites';
 
 
 
@@ -58,20 +59,21 @@ useEffect(() => {
    
   }
 
-   const funOnClose = (idClose) => { 
-      setCharacters(characters.filter((element) => element.id !== parseInt(idClose)))
+   const funOnClose = (id) => { 
+      setCharacters(characters.filter((element) => element.id !== Number(id)))
    }  
    
 
    return (
       <div >
-          { pathname !== "/" && <Nav onSearch={onSearch} randomID={randomID} /> }
+          { pathname !== "/" && <Nav onSearch={onSearch} setAccess ={setAccess} randomID={randomID} /> }
          
          <Routes>
             <Route path='/' element={<Form login={login}/> } />
             <Route path='/home' element={<Cards characters={characters} onClose={funOnClose}/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path= '/detail/:id' element={<Detail />}/>
+            <Route path='/favorites' element={<Favorites/>}/>
             
          </Routes>
       
