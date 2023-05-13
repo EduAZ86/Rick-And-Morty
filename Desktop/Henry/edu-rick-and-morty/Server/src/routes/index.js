@@ -1,5 +1,5 @@
-const { Router } = require("express")
-const router = Router();
+const express = require("express")
+const router = express.Router()
 
 const { login } = require('../controllers/login')
 const { getCharacterById } = require('../controllers/getCharById')
