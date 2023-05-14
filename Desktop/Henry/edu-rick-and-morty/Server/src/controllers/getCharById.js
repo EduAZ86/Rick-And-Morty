@@ -10,12 +10,14 @@ const getCharacterById = async (req, res) => {
         if (!data.name) throw new Error(`ID: ${id} Not found`)
             const character = {
                  id: data.id,
-                  status: data.satatus,
+                  status: data.status,
                   name: data.name,
                   species: data.species,
                   origin: data.origin,
                   image: data.image,
-                  gender: data.gender
+                  gender: data.gender,
+                  location: data.location,
+                  episode: data.episode
                 }
             
             return res.status(200).json(character)            
