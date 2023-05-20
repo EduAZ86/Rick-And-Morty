@@ -25,8 +25,8 @@ UserModel(sequelize)
 // Ejercicio 06
 // ¡Relaciona tus modelos aquí abajo!
 const { User, Favorite } = sequelize.models;
-User.belongsToMany(Favorite, {through: 'user_favorite', timestamps: false})
-Favorite.belongsToMany(User, {through: 'user_favorite', timestamps: false})
+User.belongsToMany(Favorite, { through: 'user_favorite', timestamps: false})
+Favorite.belongsToMany(User, { through: 'user_favorite', timestamps: false})
 
 module.exports = {
    User,

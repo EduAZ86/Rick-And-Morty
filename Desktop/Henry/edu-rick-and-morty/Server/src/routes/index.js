@@ -2,7 +2,7 @@ const express = require("express")
 const router = express.Router()
 
 const login  = require('../controllers/login')
-const { getCharacterById } = require('../controllers/getCharById')
+const getCharacterById = require('../controllers/getCharById')
 const postFav = require('../controllers/postFav')
 const postUser = require('../controllers/postUser')
 const deleteFav = require('../controllers/deleteFav')

@@ -28,4 +28,4 @@ const getCharacterById = async (req, res) => {
         :res.status(500).send(error.message)
     }  
 }
-module.exports = { getCharacterById }
+module.exports = getCharacterById 
