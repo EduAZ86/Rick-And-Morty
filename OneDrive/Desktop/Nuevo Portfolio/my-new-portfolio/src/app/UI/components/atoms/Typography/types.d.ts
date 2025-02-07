@@ -1,7 +1,7 @@
 'use client'
 import { CSSProperties, FC, PropsWithChildren } from 'react';
 
-export interface ITypography extends PropsWithChildren {
+export interface ITypographyProps extends PropsWithChildren {
     variant: keyof TTypographyVariant;
     style?: CSSProperties;
     bold?: boolean;
@@ -9,11 +9,11 @@ export interface ITypography extends PropsWithChildren {
 };
 
 export type TTypographyVariant = {
-    mainTitle: FC<ITypography>;
-    title: FC<ITypography>;
-    caption: FC<ITypography>;
-    paragraph: FC<ITypography>;
-    error: FC<ITypography>;
-    textButton: FC<ITypography>;
-    label: FC<ITypography>;
+    mainTitle: FC<ITypographyProps>;
+    title: FC<ITypographyProps>;
+    caption: FC<ITypographyProps>;
+    paragraph: FC<ITypographyProps>;
+    error: FC<ITypographyProps>;
+    textButton: FC<ITypographyProps>;
+    label: FC<ITypographyProps>;
 };

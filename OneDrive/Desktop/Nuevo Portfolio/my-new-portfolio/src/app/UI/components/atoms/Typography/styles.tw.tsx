@@ -1,8 +1,8 @@
 'use client'
-import { ITypography } from "./types";
+import { ITypographyProps } from "./types";
 import { FC } from 'react'
 
-export const MainTitle: FC<ITypography> = ({ align = 'left', bold = false, children }) => {
+export const MainTitle: FC<ITypographyProps> = ({ align = 'left', bold = false, children }) => {
     return (
         <h1
             className={`text-${align} ${bold ? 'font-bold' : 'font-light'} 
@@ -18,7 +18,7 @@ export const MainTitle: FC<ITypography> = ({ align = 'left', bold = false, child
     );
 };
 
-export const Title: FC<ITypography> = ({ align = 'left', bold = false, children }) => {
+export const Title: FC<ITypographyProps> = ({ align = 'left', bold = false, children }) => {
     return (
         <h2
             className={`text-${align} ${bold ? 'font-bold' : 'font-light'} 
@@ -32,7 +32,7 @@ export const Title: FC<ITypography> = ({ align = 'left', bold = false, children 
     );
 };
 
-export const Caption: FC<ITypography> = ({ align = 'left', bold = false, children }) => {
+export const Caption: FC<ITypographyProps> = ({ align = 'left', bold = false, children }) => {
     return (
         <h3
             className={`text-${align} ${bold ? 'font-bold' : 'font-light'} 
@@ -45,7 +45,7 @@ export const Caption: FC<ITypography> = ({ align = 'left', bold = false, childre
     );
 };
 
-export const Paragraph: FC<ITypography> = ({ align = 'left', bold = false, children }) => {
+export const Paragraph: FC<ITypographyProps> = ({ align = 'left', bold = false, children }) => {
     return (
         <p
             className={`text-${align} ${bold ? 'font-bold' : 'font-light'} 
@@ -58,7 +58,7 @@ export const Paragraph: FC<ITypography> = ({ align = 'left', bold = false, child
     );
 };
 
-export const TextError: FC<ITypography> = ({ align = 'left', bold = false, children }) => {
+export const TextError: FC<ITypographyProps> = ({ align = 'left', bold = false, children }) => {
     return (
         <span
             className={`text-${align} ${bold ? 'font-bold' : 'font-light'} 
@@ -71,7 +71,7 @@ export const TextError: FC<ITypography> = ({ align = 'left', bold = false, child
     );
 };
 
-export const TextButton: FC<ITypography> = ({ align = 'left', bold = false, children }) => {
+export const TextButton: FC<ITypographyProps> = ({ align = 'left', bold = false, children }) => {
     return (
         <span
             className={`text-${align} ${bold ? 'font-bold' : 'font-light'} 
@@ -83,7 +83,7 @@ export const TextButton: FC<ITypography> = ({ align = 'left', bold = false, chil
     );
 };
 
-export const Label: FC<ITypography> = ({ align = 'left', bold = false, children }) => {
+export const Label: FC<ITypographyProps> = ({ align = 'left', bold = false, children }) => {
     return (
         <label 
             className={`text-${align} ${bold ? 'font-bold' : 'font-light'} 

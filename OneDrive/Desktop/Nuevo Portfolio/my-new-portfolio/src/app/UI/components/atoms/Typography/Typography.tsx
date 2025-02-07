@@ -1,32 +1,32 @@
 'use client'
 import { FC } from "react";
-import { ITypography, TTypographyVariant } from "./types";
+import { ITypographyProps, TTypographyVariant } from "./types";
 import { Caption, TextError, MainTitle, Paragraph, Title, TextButton, Label } from "./styles.tw";
 
 const TypographySchema: TTypographyVariant = {
-    mainTitle: (props: ITypography) => (
+    mainTitle: (props: ITypographyProps) => (
         <MainTitle {...props}>{props.children}</MainTitle>
     ),
-    title: (props: ITypography) => (
+    title: (props: ITypographyProps) => (
         <Title {...props}>{props.children}</Title>
     ),
-    caption: (props: ITypography) => (
+    caption: (props: ITypographyProps) => (
         <Caption {...props}>{props.children}</Caption>
     ),
-    paragraph: (props: ITypography) => (
+    paragraph: (props: ITypographyProps) => (
         <Paragraph {...props}>{props.children}</Paragraph>
     ),
-    error: (props: ITypography) => (
+    error: (props: ITypographyProps) => (
         <TextError {...props}>{props.children}</TextError>
     ),
-    textButton: (props: ITypography) => (
+    textButton: (props: ITypographyProps) => (
         <TextButton {...props}>{props.children}</TextButton>
     ),
-    label: (props: ITypography) => (
+    label: (props: ITypographyProps) => (
         <Label {...props}>{props.children}</Label>
     ),
 }
-export const Typography: FC<ITypography> = (props: ITypography) => {
+export const Typography: FC<ITypographyProps> = (props: ITypographyProps) => {
     return TypographySchema[props?.variant](props);
 };
 
